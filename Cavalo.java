@@ -1,16 +1,17 @@
 import java.lang.Math;
 
-public class Cavalo {
-    private final int cor;// poderia ser boolean mas prefiro trabalhar com INT e futuramente sera um
-                   // atributo da classepeca
-    private boolean estado; // 1 para peças ativas, 0 para peças inativas, será utilizado futuramente
+public class Cavalo extends Peca{
 
     public Cavalo(int _cor) {
         this.cor = _cor;
         this.estado = true;
     }
 
-    public boolean checaMovimento(int linhaOrigem, int colunaOrigem, int linhaDestino, int colunaDestino) {
+    public boolean checaMovimento(int linhaOrigem, int colunaOrigem, int linhaDestino, int colunaDestino, boolean haPeca) {
+        if ((linhaDestino == linhaOrigem) &&(colunaDestino == colunaOrigem)){
+            return false;
+        }
+        
         //Verifica somente se o movimento da peça é valido, sem considerar os limetes do tabuleiro, verificado pela classe Tabuleiro
         int diferencaLinha = Math.abs(linhaDestino - linhaOrigem);
         int diferencaColuna = Math.abs(colunaDestino - colunaOrigem);

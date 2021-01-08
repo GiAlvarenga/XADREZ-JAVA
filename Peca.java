@@ -1,16 +1,8 @@
 
 public abstract class Peca {
-    private final int cor;
-    private Square currentSquare;
+    protected int cor;// poderia ser boolean mas prefiro trabalhar com INT e futuramente sera um
+    // atributo da classepeca
+    protected boolean estado; // 1 para peças ativas, 0 para peças inativas, será utilizado futuramente
 
-    public Piece(int color, Square initSq) {
-        this.color = color;
-        this.currentSquare = initSq;
-    }
-
-    public boolean checaMovimento(int linhaOrigem, int colunaOrigem, int linhaDestino, int colunaDestino) {
-        if ((linhaDestino == linhaOrigem) &&(colunaDestino == colunaOrigem)){
-            return false;
-        }
-        
+    public abstract boolean checaMovimento(int linhaOrigem, int colunaOrigem, int linhaDestino, int colunaDestino, boolean haPeca);
 }

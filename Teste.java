@@ -42,29 +42,29 @@ import Rainha.java;
     //Valida o Bispo
     bispo1.desenha();
     bispo2.desenha();
-    bispo1.checaMovimento(0, 3, 6, 8);
-    bispo2.checaMovimento(0, 3, 6, 4);
-    bispo2.checaMovimento(0, 3, 0, 4);
-    bispo2.checaMovimento(0, 3, 1, 3);
-    bispo2.checaMovimento(0, 3, 1, 4);
+    bispo1.checaMovimento(0, 3, 6, 8, false);
+    bispo2.checaMovimento(0, 3, 6, 4, false);
+    bispo2.checaMovimento(0, 3, 0, 4, false);
+    bispo2.checaMovimento(0, 3, 1, 3, false);
+    bispo2.checaMovimento(0, 3, 1, 4, false);
 
     //Valida o Rei
     rei1.desenha();
     rei2.desenha();
-    rei1.checaMovimento(0, 3, 6, 8);
-    rei2.checaMovimento(0, 3, 6, 4);
-    rei1.checaMovimento(0, 3, 0, 4);
-    rei2.checaMovimento(0, 3, 1, 3);
-    rei1.checaMovimento(0, 3, 1, 4);
+    rei1.checaMovimento(0, 3, 6, 8, false);
+    rei2.checaMovimento(0, 3, 6, 4, false);
+    rei1.checaMovimento(0, 3, 0, 4, false);
+    rei2.checaMovimento(0, 3, 1, 3, false);
+    rei1.checaMovimento(0, 3, 1, 4, false);
 
     //Valida o Cavalo
     cavalo1.desenha();
     cavalo2.desenha();
-    cavalo1.checaMovimento(0, 3, 6, 8);
-    cavalo2.checaMovimento(0, 3, 6, 4);
-    cavalo1.checaMovimento(0, 3, 0, 4);
-    cavalo2.checaMovimento(0, 3, 2, 4);
-    cavalo1.checaMovimento(0, 3, 1, 5);
+    cavalo1.checaMovimento(0, 3, 6, 8, false);
+    cavalo2.checaMovimento(0, 3, 6, 4, false);
+    cavalo1.checaMovimento(0, 3, 0, 4, false);
+    cavalo2.checaMovimento(0, 3, 2, 4, false);
+    cavalo1.checaMovimento(0, 3, 1, 5, false);
 
     //Valida o Peao
     peao1.desenha();
@@ -92,22 +92,22 @@ import Rainha.java;
     //Valida a Torre
     torre1.desenha();
     torre2.desenha();
-    torre1.checaMovimento(0, 3, 0, 7); //move em linha
-    torre2.checaMovimento(0, 3, 6, 3); //move em coluna
-    torre1.checaMovimento(0, 3, 0, 4);
-    torre2.checaMovimento(0, 3, 1, 3);
-    torre1.checaMovimento(0, 3, 1, 4);
+    torre1.checaMovimento(0, 3, 0, 7, false); //move em linha
+    torre2.checaMovimento(0, 3, 6, 3, false); //move em coluna
+    torre1.checaMovimento(0, 3, 0, 4, false);
+    torre2.checaMovimento(0, 3, 1, 3, false);
+    torre1.checaMovimento(0, 3, 1, 4, false);
 
     //Valida a Rainha
     rainha1.desenha();
     rainha2.desenha();
-    rainha1.checaMovimento(0, 3, 6, 8);
-    rainha2.checaMovimento(0, 3, 6, 4);
-    rainha1.checaMovimento(0, 3, 0, 7); //move em linha
-    rainha2.checaMovimento(0, 3, 6, 3); //move em coluna
-    rainha1.checaMovimento(0, 3, 0, 4);
-    rainha2.checaMovimento(0, 3, 1, 3);
-    rainha1.checaMovimento(0, 3, 1, 4);
+    rainha1.checaMovimento(0, 3, 6, 8, false);
+    rainha2.checaMovimento(0, 3, 6, 4, false);
+    rainha1.checaMovimento(0, 3, 0, 7, false); //move em linha
+    rainha2.checaMovimento(0, 3, 6, 3, false); //move em coluna
+    rainha1.checaMovimento(0, 3, 0, 4, false);
+    rainha2.checaMovimento(0, 3, 1, 3, false);
+    rainha1.checaMovimento(0, 3, 1, 4, false);
 
   }
 } 
