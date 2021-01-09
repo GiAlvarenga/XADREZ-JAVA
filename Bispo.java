@@ -23,9 +23,9 @@ public class Bispo extends Peca{
     //desenha o Bispo
     public void desenha(){
         if (cor == 1) {
-            System.out.println("b");
+            System.out.print("b");
         } else { 
-            System.out.println("B");
+            System.out.print("B");
         }
     }
     

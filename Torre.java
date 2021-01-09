@@ -26,9 +26,9 @@ public class Torre extends Peca{
     //imprime a torra
     public void desenha(){
         if (cor == 1) {
-            System.out.println("t");
+            System.out.print("t");
         } else { 
-            System.out.println("T");
+            System.out.print("T");
         }
     }
     

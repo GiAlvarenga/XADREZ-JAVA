@@ -44,10 +44,25 @@ public class Tabuleiro {
                     System.out.print("  ");
                 }
                 for (j = 1; j <= 8; j++) {
-                    if (posicoes[i - 97][j - 1].getCor()==1) {
-                        System.out.print("\033[107m"+"      "+"\033[100m");//6 espaços
-                    } else {
-                        System.out.print("\033[101m"+"      "+"\033[100m");
+                    //ver se tem peça na posição
+                    if((posicoes[i - 97][j - 1].getOcupado())&&(t==1)){
+                        if (posicoes[i - 97][j - 1].getCor()==1) {                        
+                            System.out.print("\033[107m"+"  ");
+                            posicoes[i-97][j-1].getPeca().desenha();
+                            System.out.print("   "+"\033[100m");//6 espaços
+                        }
+                        else {
+                            System.out.print("\033[101m"+"  ");
+                            posicoes[i-97][j-1].getPeca().desenha();
+                            System.out.print("   "+"\033[100m");
+                        }
+                    }
+                    else{
+                        if (posicoes[i - 97][j - 1].getCor()==1) {                        
+                            System.out.print("\033[107m"+"      "+"\033[100m");//6 espaços
+                        } else {
+                            System.out.print("\033[101m"+"      "+"\033[100m");
+                        }
                     }
                 }
                 System.out.println();
@@ -65,6 +80,12 @@ public class Tabuleiro {
         }
         System.out.println("Movimento Inválido");
         return false;
+    }
+
+    public void setPeca(Peca peca,int i ,int j)
+    {
+        posicoes[i][j].setPeca(peca);
+        posicoes[i][j].setOcupado();
     }
  
 }

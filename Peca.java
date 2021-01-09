@@ -5,4 +5,5 @@ public abstract class Peca {
     protected boolean estado; // 1 para peças ativas, 0 para peças inativas, será utilizado futuramente
 
     public abstract boolean checaMovimento(int linhaOrigem, int colunaOrigem, int linhaDestino, int colunaDestino, boolean haPeca);
+    public abstract void desenha();
 }

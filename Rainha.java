@@ -29,9 +29,9 @@ public class Rainha extends Peca{
     //desenha a rainha
     public void desenha(){
         if (cor == 1) {
-            System.out.println("q");
+            System.out.print("q");
         } else { 
-            System.out.println("Q");
+            System.out.print("Q");
         }
     }
     

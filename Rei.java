@@ -25,9 +25,9 @@ public class Rei extends Peca{
     //desenha o rei
     public void desenha(){
         if (cor == 1) {
-            System.out.println("r");
+            System.out.print("r");
         } else { 
-            System.out.println("R");
+            System.out.print("R");
         }
     }
     

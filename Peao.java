@@ -68,9 +68,9 @@ public class Peao extends Peca{
     //Desenha o peao
     public void desenha(){
         if (cor == 1) {
-            System.out.println("p");
+            System.out.print("p");
         } else { 
-            System.out.println("P");
+            System.out.print("P");
         }
     }
     

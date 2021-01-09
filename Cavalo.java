@@ -31,9 +31,9 @@ public class Cavalo extends Peca{
     //desenha o cavalo
     public void desenha(){
         if (cor == 1) {
-            System.out.println("c");
+            System.out.print("c");
         } else { 
-            System.out.println("C");
+            System.out.print("C");
         }
     }
     

@@ -8,6 +8,7 @@ public class Posicao {
                         */
     private int coluna;
     private boolean ocupado;
+    private Peca peca;
 
     public Posicao(int _linha, int _coluna, int _cor) {
         this.cor = _cor;
@@ -19,15 +20,24 @@ public class Posicao {
         return this.cor;
     }
 
+    public Peca getPeca(){
+        return this.peca;
+    }
+
     public boolean getOcupado() {
         return this.ocupado;
     }
 
-    public boolean setOcupado() {
+    public void setOcupado() {
         this.ocupado = true;
     }
 
-    public boolean setLivre() {
+    public void setLivre() {
         this.ocupado = false;
+    }
+
+   //Modifica peca devido ao escopo privado
+    public void setPeca(Peca p){
+        peca = p;
     }
 }
